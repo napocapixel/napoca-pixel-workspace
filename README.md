@@ -39,6 +39,37 @@ styles/
 | 	|links.scss
 |styles.scss
 
+└─ angular-monorepo
+   ├─ ...
+   ├─ apps
+   │  ├─ angular-store
+   │  │  ├─ src
+   │  │  │  ├─ app
+   │  │  │  │  ├─ app.component.css
+   │  │  │  │  ├─ app.component.html
+   │  │  │  │  ├─ app.component.spec.ts
+   │  │  │  │  ├─ app.component.ts
+   │  │  │  │  ├─ app.config.ts
+   │  │  │  │  ├─ app.routes.ts
+   │  │  │  │  └─ nx-welcome.component.ts
+   │  │  │  ├─ assets
+   │  │  │  ├─ index.html
+   │  │  │  ├─ main.ts
+   │  │  │  ├─ styles.css
+   │  │  │  └─ test-setup.ts
+   │  │  ├─ eslintrc.json
+   │  │  ├─ jest.config.ts
+   │  │  ├─ project.json
+   │  │  ├─ tsconfig.app.json
+   │  │  ├─ tsconfig.editor.json
+   │  │  ├─ tsconfig.json
+   │  │  └─ tsconfig.spec.json
+   │  └─ angular-store-e2e
+   │     └─ ...
+   ├─ nx.json
+   ├─ tsconfig.base.json
+   └─ package.json
+
 ## Addition details:
 
 - 0-utilities
