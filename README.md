@@ -40,26 +40,18 @@ styles/
 |styles.scss
 
 
-project-root/
-│
-├── src/
-│ │
-│ ├── app/
-│ │ │
-│ │ ├── components/
-│ │ │ │
-│ │ │ ├── header.component.ts
-│ │ │ ├── footer.component.ts
-│ │ │
-│ ├── assets/
-│ │ │
-│ │ ├── images/
-│ │ │ │
-│ │ │ ├── logo.png
-│ │ │ ├── background.jpg
-│ │ │
-│ ├── index.html
-│ ├── styles.css
+- project-root/
+  - src/
+    - app/
+      - components/
+        - header.component.ts
+        - footer.component.ts
+    - assets/
+      - images/
+        - logo.png
+        - background.jpg
+    - index.html
+    - styles.css
 
 
 ## Addition details:
