@@ -19,7 +19,7 @@
           "apps/demo-global-styles/src/favicon.ico",
           "apps/demo-global-styles/src/assets"
         ],
-        "styles": ["apps/demo-global-styles/src/styles.scss"],
+        "styles": ["apps/demo-global-styles/src/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {

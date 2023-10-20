@@ -1,0 +1,45 @@
+.npx-btn {
+  font-size: 13px;
+  background-color: var(--regular-blue);
+  color: #FFFFFF;
+  box-shadow: none;
+  border: 0;
+  outline: none;
+  overflow: visible;
+  line-height: 13px;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+
+  &--dark-blue {
+    background-color: var(--dark-blue);
+  }
+
+  &--regular-gray {
+    background-color: var(--regular-gray);
+    color: #000;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  &--lg {
+    width: 281px;
+    height: 42px;
+  }
+
+  &--md {
+    width: 245px;
+    height: 42px;
+  }
+
+  &--sm {
+    width: 98px;
+    height: 28px;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../../styles/3-layouts/breakpoints';
+
+.cntr {
+  height: 100vh;
+
+  div {
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  .header {
+    grid-area: h;
+  }
+  .left {
+    grid-area: l;
+  }
+  .middle {
+    grid-area: m;
+  }
+  .right {
+    grid-area: r;
+  }
+  .bottom {
+    grid-area: b;
+  }
+
+  @include xs {
+    grid-template-areas:  
+      "h h h h h h h h h h h h"
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "m m m m m m m m m m m m"
+      "l l l l l l l l l l l l"
+      "l l l l l l l l l l l l"
+      "r r r r r r r r r r r r"
+      "r r r r r r r r r r r r"
+      "b b b b b b b b b b b b"
+      "b b b b b b b b b b b b";
+  }
+
+  @include sm {
+    grid-template-areas: 
+      "h h h h h h h h h h h h"
+      "h h h h h h h h h h h h"
+      "m m m m m m m m m m m m"
+      "m m m m m m m m m m m m"
+      "l l l l l l r r r r r r"
+      "l l l l l l r r r r r r"
+      "b b b b b b b b b b b b"
+      "b b b b b b b b b b b b";
+  }
+
+  @include md {
+    grid-template-areas:  
+      "h h h h h h h h h h h h"
+      "h h h h h h h h h h h h"
+      "l l l m m m m m m r r r"
+      "l l l m m m m m m r r r"
+      "b b b b b b b b b b b b"
+      "b b b b b b b b b b b b";
+  }
+}

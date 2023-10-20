@@ -1,0 +1,40 @@
+@import '../../../styles/3-layouts/breakpoints';
+
+.cntr {
+  height: 100vh;
+
+  div {
+    background: powderblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  @include xs {
+    .left {
+      grid-column: 1 / 25;
+    }
+    .right {
+      grid-column: 1 / 25;
+    }
+  }
+
+  @include sm {
+    .left {
+      grid-column: 1 / 13;
+    }
+    .right {
+      grid-column: 13 / 25;
+    }
+  }
+
+  @include md {
+    .left {
+      grid-column: 1 / 5;
+    }
+    .right {
+      grid-column: 5 / 25;
+    }
+  }
+}

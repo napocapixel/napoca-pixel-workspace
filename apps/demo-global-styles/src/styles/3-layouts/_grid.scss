@@ -1,0 +1,107 @@
+$no-of-columns: 2, 3, 6, 12, 24, 36;
+$max-width: 1105;
+$grid-gap: 10;
+
+@each $cols in $no-of-columns {
+  .npx-grid-#{$cols} {
+    display: grid;
+    grid-template-columns: repeat($cols, minmax(10px, calc(#{$max-width - ($cols - 1) * $grid-gap}px / #{$cols})));
+    gap: #{$grid-gap}px;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@for $i from 1 through max($no-of-columns...) {
+  .npx-col-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+@for $x from 1 through max($no-of-columns...) - 1 {
+  @for $y from $x + 1 through max($no-of-columns...) {
+    .npx-col-#{$x}-to-#{$y} {
+      grid-column: #{$x} / #{$y};
+    }
+  }
+}
+
+@include xs {
+  @for $i from 1 through max($no-of-columns...) {
+    .npx-col-#{$i}--xs {
+      grid-column: span $i;
+    }
+  }
+
+  @for $x from 1 through max($no-of-columns...) - 1 {
+    @for $y from $x + 1 through max($no-of-columns...) {
+      .npx-col-#{$x}-to-#{$y}--xs {
+        grid-column: #{$x} / #{$y};
+      }
+    }
+  }
+}
+
+@include sm {
+  @for $i from 1 through max($no-of-columns...) {
+    .npx-col-#{$i}--sm {
+      grid-column: span $i;
+    }
+  }
+
+  @for $x from 1 through max($no-of-columns...) - 1 {
+    @for $y from $x + 1 through max($no-of-columns...) {
+      .npx-col-#{$x}-to-#{$y}--sm {
+        grid-column: #{$x} / #{$y};
+      }
+    }
+  }
+}
+
+@include md {
+  @for $i from 1 through max($no-of-columns...) {
+    .npx-col-#{$i}--md {
+      grid-column: span $i;
+    }
+  }
+
+  @for $x from 1 through max($no-of-columns...) - 1 {
+    @for $y from $x + 1 through max($no-of-columns...) {
+      .npx-col-#{$x}-to-#{$y}--md {
+        grid-column: #{$x} / #{$y};
+      }
+    }
+  }
+}
+
+@include lg {
+  @for $i from 1 through max($no-of-columns...) {
+    .npx-col-#{$i}--lg {
+      grid-column: span $i;
+    }
+  }
+
+  @for $x from 1 through max($no-of-columns...) - 1 {
+    @for $y from $x + 1 through max($no-of-columns...) {
+      .npx-col-#{$x}-to-#{$y}--lg {
+        grid-column: #{$x} / #{$y};
+      }
+    }
+  }
+}
+
+@include xl {
+  @for $i from 1 through max($no-of-columns...) {
+    .npx-col-#{$i}--xl {
+      grid-column: span $i;
+    }
+  }
+
+  @for $x from 1 through max($no-of-columns...) - 1 {
+    @for $y from $x + 1 through max($no-of-columns...) {
+      .npx-col-#{$x}-to-#{$y}--xl {
+        grid-column: #{$x} / #{$y};
+      }
+    }
+  }
+}
